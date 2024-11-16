@@ -23,6 +23,7 @@
 	@customTag: col-8
 	@customTag: col-9
 	@cssMod: mod_maxWidth35
+	@cssMod: mod_topAlign
 	@cssMod: mod_middleAlign
 	@cssMod: mod_mtAuto
 	@cssMod: mod_mt0
@@ -306,6 +307,15 @@ main hr.mod_withText::after {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+}
+
+
+
+
+.mod_topAlign {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
 }
 
 
