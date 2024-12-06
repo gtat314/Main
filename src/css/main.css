@@ -43,6 +43,7 @@
 	@cssMod: mod_hideUnder1024
 	@cssMod: mod_reverseUnder900
 	@cssMod: mod_invisible
+	@cssMod: mod_hidden
 	--theme-bodyBackgroundColor 		rgba(255, 255, 255, 1)
 	--theme-transitionDuration 			0.15s
 	--theme-mainFont 					rgba(0, 0, 0, 1)
@@ -323,6 +324,13 @@ main hr.mod_withText::after {
 
 .mod_invisible {
 	opacity: 0;
+}
+
+
+
+
+.mod_hidden {
+	display: none;
 }
 
 
