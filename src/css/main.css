@@ -333,6 +333,10 @@ main hr.mod_withText::after {
 	display: none;
 }
 
+.mod_hiddenImportant {
+	display: none !important;
+}
+
 
 
 
