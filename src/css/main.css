@@ -221,6 +221,10 @@ container-box.mod_gap1 {
 	gap: 1rem;
 }
 
+container-box.mod_gap2 {
+	gap: 2rem;
+}
+
 @media only screen and (max-device-width: 680px) {
 
     container-box {
@@ -228,7 +232,8 @@ container-box.mod_gap1 {
         gap: 0;
     }
 
-    container-box.mod_gap1 {
+    container-box.mod_gap1,
+	container-box.mod_gap2 {
         gap: 0;
     }
 
@@ -237,7 +242,8 @@ container-box.mod_gap1 {
 		gap: unset;
 	}
 
-	container-box.mod_gap1.mod_forceRow {
+	container-box.mod_gap1.mod_forceRow,
+	container-box.mod_gap2.mod_forceRow {
         gap: 1rem;
     }
 
