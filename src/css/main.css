@@ -1,8 +1,10 @@
 /*
 	@modCssClasses
+	@customTag: main-wrap
 	@customTag: main
 		@cssMod: mod_constrained
 		@cssMod: mod_margin0
+		@cssMod: mod_popup
 	@customTag: container-box
 		@cssMod: mod_gap1
 		@cssMod: mod_forceRow
@@ -143,6 +145,30 @@ body.mod_padding0 {
 
 
 
+main-wrap {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	z-index: 6;
+	display: none;
+	backdrop-filter: blur(6px) brightness(66%);
+}
+
+main-wrap.active {
+	display: flex;
+}
+
+main-wrap .body {
+	height: calc(80vh - 6rem);
+	overflow: auto;
+}
+
+
+
+
 main {
 	margin-top: 0;
 	margin-right: 2.5vw;
@@ -152,6 +178,32 @@ main {
 	gap: 2.5vw;
 	transition-property: opacity;
 	transition-duration: var(--theme-transitionDuration, 0.15s);
+}
+
+main.mod_popup {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	min-width: 50rem;
+	height: 80vh;
+	overflow: scroll;
+	padding: 0 1rem 1rem 1rem;
+	border-radius: 0.5rem;
+	box-shadow: 0 0 1rem rgb(0, 0, 0);
+	margin: auto;
+	background-color: var(--theme-background, rgba(255, 255, 255, 1));
+	transition-property: background-color, box-shadow, border-color, opacity;
+	transition-duration: var(--theme-transitionDuration, 0.15s);
+	flex-direction: column;
+	width: 40vw;
+	display: flex;
+	scrollbar-width: none;
+	border-style: solid;
+	border-width: 1px;
+	border-color: var(--theme-highlightedBackgroundColor, rgba(0, 0, 0, 0.1));
+	gap: unset;
 }
 
 main.mod_constrained {
