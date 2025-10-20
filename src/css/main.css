@@ -162,11 +162,6 @@ main-wrap.active {
 	display: flex;
 }
 
-main-wrap .body {
-	height: calc(80vh - 6rem);
-	overflow: auto;
-}
-
 
 
 
