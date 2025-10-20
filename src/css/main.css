@@ -5,6 +5,7 @@
 		@cssMod: mod_constrained
 		@cssMod: mod_margin0
 		@cssMod: mod_popup
+		@cssMod: mod_wide
 	@customTag: container-box
 		@cssMod: mod_gap1
 		@cssMod: mod_forceRow
@@ -204,6 +205,10 @@ main.mod_popup {
 	border-width: 1px;
 	border-color: var(--theme-highlightedBackgroundColor, rgba(0, 0, 0, 0.1));
 	gap: unset;
+}
+
+main.mod_popup.mod_wide {
+	width: 80vw;
 }
 
 main.mod_constrained {
